@@ -674,9 +674,115 @@ td.b-cell{color:var(--ink)}
   .amort-card{page-break-before:always}
   .ad-card{display:none !important}
 }
+
+/* ── ABOUT SECTION ── */
+.about-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;animation:fadeUp .4s .05s ease both}
+.about-inner{padding:24px 20px}
+.about-title{font-size:18px;font-weight:800;color:var(--ink);font-family:'Nunito',sans-serif;letter-spacing:-.3px;margin-bottom:6px}
+.about-sub{font-size:12px;color:var(--ink3);font-weight:600;margin-bottom:16px}
+.about-body{font-size:13px;color:var(--ink2);font-weight:600;line-height:1.75;font-family:'Nunito',sans-serif}
+.about-body p{margin-bottom:12px}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.about-feat{display:flex;align-items:flex-start;gap:10px;background:#F9F8F6;border:1px solid var(--border);border-radius:12px;padding:12px 14px}
+.about-feat-icon{font-size:18px;flex-shrink:0;margin-top:1px}
+.about-feat-text{display:flex;flex-direction:column;gap:2px}
+.about-feat-lbl{font-size:11px;font-weight:800;color:var(--ink);font-family:'Nunito',sans-serif}
+.about-feat-desc{font-size:10px;font-weight:600;color:var(--ink3);font-family:'Nunito',sans-serif}
+@media(max-width:480px){.about-features{grid-template-columns:1fr}}
+
+/* ── FAQ SECTION ── */
+.faq-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;animation:fadeUp .4s .14s ease both}
+.faq-inner{padding:24px 20px}
+.faq-title{font-size:18px;font-weight:800;color:var(--ink);font-family:'Nunito',sans-serif;letter-spacing:-.3px;margin-bottom:6px}
+.faq-sub{font-size:12px;color:var(--ink3);font-weight:600;margin-bottom:16px}
+.faq-item{border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:10px}
+.faq-item:last-child{margin-bottom:0}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;background:none;border:none;cursor:pointer;font-family:'Nunito',sans-serif;font-size:13px;font-weight:700;color:var(--ink);text-align:left;transition:background .15s}
+.faq-q:hover{background:#F9F7F4}
+.faq-q-text{flex:1}
+.faq-chevron{font-size:16px;color:var(--ink3);transition:transform .25s;flex-shrink:0;display:inline-block}
+.faq-chevron.open{transform:rotate(90deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;padding:0 16px;font-size:12px;font-weight:600;color:var(--ink2);font-family:'Nunito',sans-serif;line-height:1.7;background:#F9F8F6}
+.faq-a.open{max-height:300px;padding:14px 16px}
+
+/* ── PRIVACY POLICY MODAL ── */
+.pp-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:500;align-items:center;justify-content:center;padding:20px}
+.pp-overlay.open{display:flex}
+.pp-modal{background:#fff;border-radius:20px;max-width:680px;width:100%;max-height:88vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+.pp-head{display:flex;align-items:center;justify-content:space-between;padding:20px 24px 16px;border-bottom:1px solid var(--border)}
+.pp-head-title{font-size:17px;font-weight:800;color:var(--ink);font-family:'Nunito',sans-serif;letter-spacing:-.2px}
+.pp-close{background:none;border:none;font-size:22px;color:var(--ink3);cursor:pointer;line-height:1;padding:4px 8px;border-radius:8px;transition:background .15s}
+.pp-close:hover{background:#F3F4F6;color:var(--ink)}
+.pp-body{overflow-y:auto;padding:20px 24px 24px;font-size:13px;font-weight:600;color:var(--ink2);font-family:'Nunito',sans-serif;line-height:1.75}
+.pp-body h3{font-size:13px;font-weight:800;color:var(--ink);margin:18px 0 6px}
+.pp-body h3:first-child{margin-top:0}
+.pp-body p{margin-bottom:10px}
+.pp-body ul{margin:0 0 10px 18px}
+.pp-body ul li{margin-bottom:4px}
+.pp-updated{font-size:10px;color:var(--ink3);margin-top:16px;font-style:italic;display:block}
+
+/* ── SITE FOOTER ── */
+.site-footer{background:#1A1814;color:#ADA9A3;border-radius:var(--r);padding:28px 24px 20px;font-family:'Nunito',sans-serif;margin-top:4px}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px;margin-bottom:24px}
+.footer-brand-name{font-size:17px;font-weight:800;color:#fff;letter-spacing:-.3px;margin-bottom:8px}
+.footer-brand-name em{font-style:italic;color:#52A879}
+.footer-brand-desc{font-size:11px;font-weight:600;color:#6B6760;line-height:1.6;max-width:260px}
+.footer-col-title{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:#6B6760;margin-bottom:10px}
+.footer-links{display:flex;flex-direction:column;gap:7px}
+.footer-link{font-size:12px;font-weight:600;color:#ADA9A3;text-decoration:none;transition:color .15s;cursor:pointer;background:none;border:none;padding:0;text-align:left;font-family:'Nunito',sans-serif}
+.footer-link:hover{color:#fff}
+.footer-bottom{border-top:1px solid #2A2724;padding-top:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.footer-copy{font-size:11px;color:#6B6760;font-weight:600}
+.footer-disclaimer{font-size:10px;color:#4A4643;font-weight:600;max-width:360px;text-align:right;line-height:1.5}
+@media(max-width:600px){.footer-top{grid-template-columns:1fr;gap:20px}.footer-disclaimer{text-align:left;max-width:100%}}
+@media print{.site-footer,.faq-card,.about-card{display:none !important}}
 </style>
 </head>
-<body>
+<body id="top">
+
+<!-- ══ PRIVACY POLICY MODAL ══ -->
+<div class="pp-overlay" id="ppOverlay" onclick="if(event.target===this)closePrivacy()">
+  <div class="pp-modal" role="dialog" aria-modal="true" aria-labelledby="ppTitle">
+    <div class="pp-head">
+      <span class="pp-head-title" id="ppTitle">🔒 Privacy Policy</span>
+      <button class="pp-close" onclick="closePrivacy()" aria-label="Close">×</button>
+    </div>
+    <div class="pp-body">
+      <h3>1. Introduction</h3>
+      <p>Welcome to <strong>Advanced EMI Calculator</strong> ("we", "us", or "our"). This Privacy Policy explains how we collect, use, and protect your information when you visit <strong>advancedemicalculator.com</strong>.</p>
+
+      <h3>2. Information We Collect</h3>
+      <p>We do not collect any personally identifiable information. All loan calculations are performed locally in your browser and no financial data is transmitted to our servers. We may collect anonymous usage data through third-party analytics to improve the tool.</p>
+
+      <h3>3. Cookies &amp; Advertising</h3>
+      <p>This website uses <strong>Google AdSense</strong> to display advertisements. Google and its partners may use cookies to serve ads based on your prior visits to this site and other sites on the internet. You may opt out of personalised advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ad Settings</a>.</p>
+      <ul>
+        <li>Google's use of advertising cookies enables it and its partners to serve ads based on your visit to our site.</li>
+        <li>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to our website.</li>
+      </ul>
+
+      <h3>4. Third-Party Analytics</h3>
+      <p>We may use Google Analytics or similar tools to understand site traffic. These services collect anonymised data such as page views, device type, and geographic region. No personal data is shared.</p>
+
+      <h3>5. Data Security</h3>
+      <p>Since all calculations are client-side and we collect no personal financial data, your loan details remain entirely private on your device.</p>
+
+      <h3>6. External Links</h3>
+      <p>Our site may contain links to external websites. We are not responsible for the privacy practices of those sites and encourage you to review their privacy policies.</p>
+
+      <h3>7. Children's Privacy</h3>
+      <p>This website is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+      <h3>8. Changes to This Policy</h3>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date.</p>
+
+      <h3>9. Contact Us</h3>
+      <p>If you have any questions about this Privacy Policy, please contact us at <strong>contact@advancedemicalculator.com</strong>.</p>
+
+      <span class="pp-updated">Last updated: April 2026</span>
+    </div>
+  </div>
+</div>
 
 <!-- ══ APP BAR ══ -->
 <nav class="app-bar">
@@ -684,11 +790,11 @@ td.b-cell{color:var(--ink)}
     <a class="app-bar-brand" href="#">Loan <em>Planner</em></a>
     <!-- Desktop nav links -->
     <div class="app-bar-links">
-      <a class="app-bar-link active" href="#">Home</a>
-      <a class="app-bar-link" href="#">Calculators</a>
-      <a class="app-bar-link" href="#">Blog</a>
-      <a class="app-bar-link" href="#">About</a>
-      <a class="app-bar-link" href="#">Contact</a>
+      <a class="app-bar-link active" href="#top">Home</a>
+      <a class="app-bar-link" href="#faq">FAQs</a>
+      <a class="app-bar-link" href="#about">About</a>
+      <a class="app-bar-link" href="#contact">Contact</a>
+      <a class="app-bar-link" href="javascript:void(0)" onclick="openPrivacy()">Privacy</a>
     </div>
     <!-- Mobile hamburger -->
     <button class="app-bar-ham" id="appBarHam" onclick="toggleAppMenu()" aria-label="Menu">
@@ -697,11 +803,11 @@ td.b-cell{color:var(--ink)}
   </div>
   <!-- Mobile dropdown -->
   <div class="app-bar-mobile" id="appBarMobile">
-    <a class="app-bar-mobile-link active" href="#" onclick="closeAppMenu()">Home</a>
-    <a class="app-bar-mobile-link" href="#" onclick="closeAppMenu()">Calculators</a>
-    <a class="app-bar-mobile-link" href="#" onclick="closeAppMenu()">Blog</a>
-    <a class="app-bar-mobile-link" href="#" onclick="closeAppMenu()">About</a>
-    <a class="app-bar-mobile-link" href="#" onclick="closeAppMenu()">Contact</a>
+    <a class="app-bar-mobile-link active" href="#top" onclick="closeAppMenu()">Home</a>
+    <a class="app-bar-mobile-link" href="#faq" onclick="closeAppMenu()">FAQs</a>
+    <a class="app-bar-mobile-link" href="#about" onclick="closeAppMenu()">About</a>
+    <a class="app-bar-mobile-link" href="#contact" onclick="closeAppMenu()">Contact</a>
+    <a class="app-bar-mobile-link" href="javascript:void(0)" onclick="openPrivacy();closeAppMenu()">Privacy Policy</a>
   </div>
 </nav>
 
@@ -1344,8 +1450,51 @@ td.b-cell{color:var(--ink)}
     </div>
   </div>
 
+  <!-- ══ ABOUT SECTION ══ -->
+  <section class="about-card" id="about">
+    <div class="about-inner">
+      <div class="about-title">About Advanced EMI Calculator</div>
+      <div class="about-sub">India's most advanced free home loan EMI calculator</div>
+      <div class="about-body">
+        <p>Advanced EMI Calculator is a free, browser-based financial tool built specifically for Indian home loan borrowers. Our mission is to bring institutional-grade loan analysis to every individual — for free, with complete privacy.</p>
+        <p>Unlike basic calculators, we support real-world loan events: prepayments (one-time, recurring, and step-up), floating interest rate changes, and custom EMI schedules — giving you an accurate picture of your total loan cost and repayment timeline.</p>
+        <p>All calculations run locally in your browser. No financial data is ever sent to a server. Your loan details stay completely private.</p>
+      </div>
+      <div class="about-features">
+        <div class="about-feat">
+          <div class="about-feat-icon">💸</div>
+          <div class="about-feat-text">
+            <div class="about-feat-lbl">Prepayment Simulation</div>
+            <div class="about-feat-desc">One-time, recurring & step-up prepayments with tenure/EMI choice</div>
+          </div>
+        </div>
+        <div class="about-feat">
+          <div class="about-feat-icon">📉</div>
+          <div class="about-feat-text">
+            <div class="about-feat-lbl">Rate Change Modelling</div>
+            <div class="about-feat-desc">Simulate RBI repo rate changes on floating rate loans</div>
+          </div>
+        </div>
+        <div class="about-feat">
+          <div class="about-feat-icon">📊</div>
+          <div class="about-feat-text">
+            <div class="about-feat-lbl">Full Amortisation Table</div>
+            <div class="about-feat-desc">Year → Month → Day drill-down with crossover insights</div>
+          </div>
+        </div>
+        <div class="about-feat">
+          <div class="about-feat-icon">🔒</div>
+          <div class="about-feat-text">
+            <div class="about-feat-lbl">100% Private</div>
+            <div class="about-feat-desc">All calculations run in your browser — no data leaves your device</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ══ CONTACT CARD ══ -->
-  <div class="contact-card">
+  <div class="contact-card" id="contact">
     <div class="contact-header">
       <div class="contact-title">Get in Touch</div>
       <div class="contact-sub">Have questions about your loan? We're here to help.</div>
@@ -1381,12 +1530,170 @@ td.b-cell{color:var(--ink)}
       </a>
     </div>
     <div class="contact-footer">
-      Built with ❤️ · © 2026 Loan Planner · For informational purposes only
+      Built with ❤️ · © 2026 Advanced EMI Calculator · <a href="javascript:void(0)" onclick="openPrivacy()" style="color:inherit;text-decoration:underline">Privacy Policy</a> · For informational purposes only — not financial advice
     </div>
   </div>
 
 </div>
+
+  <!-- ══ FAQ SECTION ══ -->
+  <section class="faq-card" id="faq">
+    <div class="faq-inner">
+      <div class="faq-title">Frequently Asked Questions</div>
+      <div class="faq-sub">Answers to the most common home loan queries</div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">How is home loan EMI calculated?</span>
+          <span class="faq-chevron">›</span>
+        </button>
+        <div class="faq-a">
+          Home loan EMI is calculated using the formula: <strong>EMI = P × r × (1+r)ⁿ / ((1+r)ⁿ − 1)</strong>, where P is the principal loan amount, r is the monthly interest rate (annual rate ÷ 12 ÷ 100), and n is the loan tenure in months. For example, a ₹50 lakh loan at 8.5% for 20 years gives an EMI of approximately ₹43,391 per month.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What is the EMI for a ₹50 lakh home loan?</span>
+          <span class="faq-chevron">›</span>
+        </button>
+        <div class="faq-a">
+          For a ₹50 lakh home loan at 8.5% for 20 years, the EMI is approximately ₹43,391/month. At 8.75% for 20 years it becomes approximately ₹44,188/month. Use the calculator above to get the exact EMI for your specific loan amount, rate, and tenure.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Is it better to reduce EMI or tenure when making a prepayment?</span>
+          <span class="faq-chevron">›</span>
+        </button>
+        <div class="faq-a">
+          Reducing <strong>tenure</strong> saves more total interest because you exit the loan faster. Reducing <strong>EMI</strong> improves your monthly cash flow. If you can comfortably afford the current EMI, reducing tenure is mathematically the better choice. Use the Prepayments section in Advanced Options to simulate both scenarios.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What happens to my EMI when RBI changes the repo rate?</span>
+          <span class="faq-chevron">›</span>
+        </button>
+        <div class="faq-a">
+          For floating rate home loans, when RBI increases the repo rate, banks typically increase your home loan interest rate — either raising your EMI or extending your tenure. Use the <strong>Interest Rate Changes</strong> feature in Advanced Options to simulate exactly how any rate change affects your total loan cost.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What is the maximum home loan tenure in India?</span>
+          <span class="faq-chevron">›</span>
+        </button>
+        <div class="faq-a">
+          Most Indian banks offer home loan tenures up to <strong>30 years (360 months)</strong>. SBI, HDFC, ICICI, Kotak and other major lenders typically allow tenures up to 30 years, subject to the borrower's age at loan maturity not exceeding 70–75 years.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">How much home loan can I get on a ₹50,000 salary?</span>
+          <span class="faq-chevron">›</span>
+        </button>
+        <div class="faq-a">
+          Banks typically allow EMI to be 40–50% of your net monthly income. On a ₹50,000 monthly salary, your maximum EMI would be ₹20,000–25,000. At 8.5% for 20 years, this translates to an eligible loan amount of approximately ₹20–24 lakh. The exact amount depends on your credit score, existing liabilities, and the lender.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ SITE FOOTER ══ -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">Advanced <em>EMI Calculator</em></div>
+        <div class="footer-brand-desc">India's most advanced free home loan EMI calculator — supporting prepayments, rate changes, custom EMI schedules, and full amortisation breakdown.</div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <div class="footer-links">
+          <a class="footer-link" href="#top">🏠 Calculator</a>
+          <a class="footer-link" href="#faq">❓ FAQs</a>
+          <a class="footer-link" href="#about">ℹ️ About Us</a>
+          <a class="footer-link" href="#contact">✉️ Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Legal</div>
+        <div class="footer-links">
+          <button class="footer-link" onclick="openPrivacy()">🔒 Privacy Policy</button>
+          <a class="footer-link" href="#faq">📋 Disclaimer</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Advanced EMI Calculator · All rights reserved</span>
+      <span class="footer-disclaimer">This tool is for informational purposes only and does not constitute financial or legal advice. Always consult a qualified financial advisor before making loan decisions.</span>
+    </div>
+  </footer>
+
+</div>
 <script>
+// ── UI Helpers: Privacy Modal ──
+function openPrivacy() {
+  var o = document.getElementById('ppOverlay');
+  if (o) { o.classList.add('open'); document.body.style.overflow='hidden'; }
+}
+function closePrivacy() {
+  var o = document.getElementById('ppOverlay');
+  if (o) { o.classList.remove('open'); document.body.style.overflow=''; }
+}
+document.addEventListener('keydown', function(e){ if(e.key==='Escape') closePrivacy(); });
+
+// ── UI Helpers: FAQ Accordion ──
+function toggleFaq(btn) {
+  var answer = btn.nextElementSibling;
+  var chevron = btn.querySelector('.faq-chevron');
+  var isOpen = answer.classList.contains('open');
+  // Close all others
+  document.querySelectorAll('.faq-a.open').forEach(function(a){
+    a.classList.remove('open');
+    var c = a.previousElementSibling.querySelector('.faq-chevron');
+    if(c) c.classList.remove('open');
+  });
+  if (!isOpen) {
+    answer.classList.add('open');
+    if(chevron) chevron.classList.add('open');
+  }
+}
+
+// ── UI Helpers: App Bar ──
+function toggleAppMenu() {
+  var mob = document.getElementById('appBarMobile');
+  var ham = document.getElementById('appBarHam');
+  if (!mob) return;
+  var open = mob.classList.toggle('open');
+  if (ham) ham.classList.toggle('open', open);
+}
+function closeAppMenu() {
+  var mob = document.getElementById('appBarMobile');
+  var ham = document.getElementById('appBarHam');
+  if (mob) mob.classList.remove('open');
+  if (ham) ham.classList.remove('open');
+}
+
+// ── UI Helpers: Overflow Menu ──
+function toggleOverflowMenu() {
+  var menu = document.getElementById('overflowMenu');
+  if (menu) menu.classList.toggle('open');
+}
+function closeOverflowMenu() {
+  var menu = document.getElementById('overflowMenu');
+  if (menu) menu.classList.remove('open');
+}
+document.addEventListener('click', function(e){
+  var overflow = document.getElementById('hdrOverflow');
+  if (overflow && !overflow.contains(e.target)) closeOverflowMenu();
+});
+
 // ── Globals ──
 const sanitise = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 let P = 0, r = 0, n = 240, emi = 0, tenure = 20, loanStartYear = new Date().getFullYear(), loanStartMonth = new Date().getMonth(), loanStartDay = new Date().getDate(), yearlyData = [], chartMode = 'full', amortView = 'month';
