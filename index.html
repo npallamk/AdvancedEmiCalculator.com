@@ -174,7 +174,7 @@
   --date-wrap-width: 150px;
 }
 
-body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;padding:28px 16px 60px}
+body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;padding:76px 16px 60px}
 
 .wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
 
@@ -533,7 +533,7 @@ td.b-cell{color:var(--ink)}
 .af-val{font-family:'Nunito',sans-serif;font-weight:700;font-size:15px;color:var(--ink)}
 .amort-notice{margin:0 16px 12px;padding:9px 14px;background:var(--orange-l);border-radius:10px;font-size:11px;font-weight:600;color:var(--orange);line-height:1.5}
 /* ── App Bar ── */
-.app-bar{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid #F0EDE8;box-shadow:0 1px 8px rgba(0,0,0,.06)}
+.app-bar{position:fixed;top:0;left:0;width:100%;z-index:200;background:#fff;border-bottom:1px solid #F0EDE8;box-shadow:0 1px 8px rgba(0,0,0,.06)}
 .app-bar-inner{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 16px;height:46px}
 .app-bar-brand{font-size:16px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--ink);text-decoration:none;letter-spacing:-.3px;flex-shrink:0}
 .app-bar-brand em{font-style:italic;color:var(--green)}
@@ -721,23 +721,23 @@ td.b-cell{color:var(--ink)}
 .pp-body ul li{margin-bottom:4px}
 .pp-updated{font-size:10px;color:var(--ink3);margin-top:16px;font-style:italic;display:block}
 
-/* ── SITE FOOTER ── */
-.site-footer{background:#1A1814;color:#ADA9A3;border-radius:var(--r);padding:28px 24px 20px;font-family:'Nunito',sans-serif;margin-top:4px}
-.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px;margin-bottom:24px}
-.footer-brand-name{font-size:17px;font-weight:800;color:#fff;letter-spacing:-.3px;margin-bottom:8px}
-.footer-brand-name em{font-style:italic;color:#52A879}
-.footer-brand-desc{font-size:11px;font-weight:600;color:#6B6760;line-height:1.6;max-width:260px}
-.footer-col-title{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:#6B6760;margin-bottom:10px}
-.footer-links{display:flex;flex-direction:column;gap:7px}
-.footer-link{font-size:12px;font-weight:600;color:#ADA9A3;text-decoration:none;transition:color .15s;cursor:pointer;background:none;border:none;padding:0;text-align:left;font-family:'Nunito',sans-serif}
-.footer-link:hover{color:#fff}
-.footer-bottom{border-top:1px solid #2A2724;padding-top:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.footer-copy{font-size:11px;color:#6B6760;font-weight:600}
-.footer-disclaimer{font-size:10px;color:#4A4643;font-weight:600;max-width:360px;text-align:right;line-height:1.5}
-@media(max-width:600px){.footer-top{grid-template-columns:1fr;gap:20px}.footer-disclaimer{text-align:left;max-width:100%}}
+/* ── SITE FOOTER slim strip ── */
+.site-footer{background:#1A1814;border-radius:var(--r);margin-top:4px}
+.sf-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:12px;flex-wrap:wrap}
+.sf-copy{font-size:11px;font-weight:600;color:#6B6760;font-family:'Nunito',sans-serif}
+.sf-copy strong{color:#ADA9A3;font-weight:700}
+.sf-heart{color:#E05C72}
+.sf-nav{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+.sf-link{font-size:11.5px;font-weight:700;color:#ADA9A3;text-decoration:none;padding:4px 9px;border-radius:6px;transition:color .15s,background .15s;font-family:'Nunito',sans-serif;white-space:nowrap;background:none;border:none;cursor:pointer}
+.sf-link:hover{color:#fff;background:rgba(255,255,255,.07)}
+@media(max-width:600px){.sf-inner{flex-direction:column;align-items:flex-start;gap:10px;padding:14px 16px}}
 @media print{.site-footer,.faq-card,.about-card{display:none !important}}
 </style>
 </head>
+<style>
+body { display: flex; flex-direction: column; min-height: 100vh; }
+.wrap { flex: 1; display: flex; flex-direction: column; }
+</style>
 <body id="top">
 
 <!-- ══ PRIVACY POLICY MODAL ══ -->
@@ -787,13 +787,13 @@ td.b-cell{color:var(--ink)}
 <!-- ══ APP BAR ══ -->
 <nav class="app-bar">
   <div class="app-bar-inner">
-    <a class="app-bar-brand" href="#">Loan <em>Planner</em></a>
+    <a class="app-bar-brand" href="#">Advanced <em>EMI Calculator</em></a>
     <!-- Desktop nav links -->
     <div class="app-bar-links">
-      <a class="app-bar-link active" href="#top">Home</a>
-      <a class="app-bar-link" href="#faq">FAQs</a>
-      <a class="app-bar-link" href="#about">About</a>
-      <a class="app-bar-link" href="#contact">Contact</a>
+      <a class="app-bar-link active" href="index.html">Home</a>
+      <a class="app-bar-link" href="faq.html">FAQs</a>
+      <a class="app-bar-link" href="about.html">About</a>
+      <a class="app-bar-link" href="contact.html">Contact</a>
       <a class="app-bar-link" href="javascript:void(0)" onclick="openPrivacy()">Privacy</a>
     </div>
     <!-- Mobile hamburger -->
@@ -803,10 +803,10 @@ td.b-cell{color:var(--ink)}
   </div>
   <!-- Mobile dropdown -->
   <div class="app-bar-mobile" id="appBarMobile">
-    <a class="app-bar-mobile-link active" href="#top" onclick="closeAppMenu()">Home</a>
-    <a class="app-bar-mobile-link" href="#faq" onclick="closeAppMenu()">FAQs</a>
-    <a class="app-bar-mobile-link" href="#about" onclick="closeAppMenu()">About</a>
-    <a class="app-bar-mobile-link" href="#contact" onclick="closeAppMenu()">Contact</a>
+    <a class="app-bar-mobile-link active" href="index.html" onclick="closeAppMenu()">Home</a>
+    <a class="app-bar-mobile-link" href="faq.html" onclick="closeAppMenu()">FAQs</a>
+    <a class="app-bar-mobile-link" href="about.html" onclick="closeAppMenu()">About</a>
+    <a class="app-bar-mobile-link" href="contact.html" onclick="closeAppMenu()">Contact</a>
     <a class="app-bar-mobile-link" href="javascript:void(0)" onclick="openPrivacy();closeAppMenu()">Privacy Policy</a>
   </div>
 </nav>
@@ -815,11 +815,8 @@ td.b-cell{color:var(--ink)}
 
   <!-- Header -->
   <div class="top">
-    <div>
-      <h1 class="site-h1">Advanced <em>EMI Calculator</em></h1>
-      <p class="site-tagline">Free Home Loan EMI Calculator — India</p>
-    </div>
-    <div style="display:flex;align-items:center;gap:8px">
+    <h1 style="display:none;">Advanced EMI Calculator</h1>
+    <div style="display:flex;align-items:center;gap:8px;margin-left:auto;">
       <div class="curr-select-wrap">
         <select id="currencySelect" class="curr-select" onchange="onCurrencyChange()">
           <option value="INR">₹ INR</option>
@@ -1450,188 +1447,20 @@ td.b-cell{color:var(--ink)}
     </div>
   </div>
 
-  <!-- ══ ABOUT SECTION ══ -->
-  <section class="about-card" id="about">
-    <div class="about-inner">
-      <div class="about-title">About Advanced EMI Calculator</div>
-      <div class="about-sub">India's most advanced free home loan EMI calculator</div>
-      <div class="about-body">
-        <p>Advanced EMI Calculator is a free, browser-based financial tool built specifically for Indian home loan borrowers. Our mission is to bring institutional-grade loan analysis to every individual — for free, with complete privacy.</p>
-        <p>Unlike basic calculators, we support real-world loan events: prepayments (one-time, recurring, and step-up), floating interest rate changes, and custom EMI schedules — giving you an accurate picture of your total loan cost and repayment timeline.</p>
-        <p>All calculations run locally in your browser. No financial data is ever sent to a server. Your loan details stay completely private.</p>
-      </div>
-      <div class="about-features">
-        <div class="about-feat">
-          <div class="about-feat-icon">💸</div>
-          <div class="about-feat-text">
-            <div class="about-feat-lbl">Prepayment Simulation</div>
-            <div class="about-feat-desc">One-time, recurring & step-up prepayments with tenure/EMI choice</div>
-          </div>
-        </div>
-        <div class="about-feat">
-          <div class="about-feat-icon">📉</div>
-          <div class="about-feat-text">
-            <div class="about-feat-lbl">Rate Change Modelling</div>
-            <div class="about-feat-desc">Simulate RBI repo rate changes on floating rate loans</div>
-          </div>
-        </div>
-        <div class="about-feat">
-          <div class="about-feat-icon">📊</div>
-          <div class="about-feat-text">
-            <div class="about-feat-lbl">Full Amortisation Table</div>
-            <div class="about-feat-desc">Year → Month → Day drill-down with crossover insights</div>
-          </div>
-        </div>
-        <div class="about-feat">
-          <div class="about-feat-icon">🔒</div>
-          <div class="about-feat-text">
-            <div class="about-feat-lbl">100% Private</div>
-            <div class="about-feat-desc">All calculations run in your browser — no data leaves your device</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ══ CONTACT CARD ══ -->
-  <div class="contact-card" id="contact">
-    <div class="contact-header">
-      <div class="contact-title">Get in Touch</div>
-      <div class="contact-sub">Have questions about your loan? We're here to help.</div>
-    </div>
-    <div class="contact-grid">
-      <a class="contact-item" href="/cdn-cgi/l/email-protection#cea6aba2a2a18ea2a1afa0bea2afa0a0abbce0a7a0">
-        <div class="contact-icon">✉️</div>
-        <div class="contact-info">
-          <div class="contact-lbl">Email</div>
-          <div class="contact-val"><span class="__cf_email__" data-cfemail="2c44494040436c40434d425c404d4242495e024542">[email&#160;protected]</span></div>
-        </div>
-      </a>
-      <a class="contact-item" href="tel:+918000000000">
-        <div class="contact-icon">📞</div>
-        <div class="contact-info">
-          <div class="contact-lbl">Phone</div>
-          <div class="contact-val">+91 80000 00000</div>
-        </div>
-      </a>
-      <a class="contact-item" href="https://wa.me/918000000000" target="_blank">
-        <div class="contact-icon">💬</div>
-        <div class="contact-info">
-          <div class="contact-lbl">WhatsApp</div>
-          <div class="contact-val">Chat with us</div>
-        </div>
-      </a>
-      <a class="contact-item" href="https://loanplanner.in" target="_blank">
-        <div class="contact-icon">🌐</div>
-        <div class="contact-info">
-          <div class="contact-lbl">Website</div>
-          <div class="contact-val">loanplanner.in</div>
-        </div>
-      </a>
-    </div>
-    <div class="contact-footer">
-      Built with ❤️ · © 2026 Advanced EMI Calculator · <a href="javascript:void(0)" onclick="openPrivacy()" style="color:inherit;text-decoration:underline">Privacy Policy</a> · For informational purposes only — not financial advice
-    </div>
-  </div>
 
-</div>
-
-  <!-- ══ FAQ SECTION ══ -->
-  <section class="faq-card" id="faq">
-    <div class="faq-inner">
-      <div class="faq-title">Frequently Asked Questions</div>
-      <div class="faq-sub">Answers to the most common home loan queries</div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span class="faq-q-text">How is home loan EMI calculated?</span>
-          <span class="faq-chevron">›</span>
-        </button>
-        <div class="faq-a">
-          Home loan EMI is calculated using the formula: <strong>EMI = P × r × (1+r)ⁿ / ((1+r)ⁿ − 1)</strong>, where P is the principal loan amount, r is the monthly interest rate (annual rate ÷ 12 ÷ 100), and n is the loan tenure in months. For example, a ₹50 lakh loan at 8.5% for 20 years gives an EMI of approximately ₹43,391 per month.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span class="faq-q-text">What is the EMI for a ₹50 lakh home loan?</span>
-          <span class="faq-chevron">›</span>
-        </button>
-        <div class="faq-a">
-          For a ₹50 lakh home loan at 8.5% for 20 years, the EMI is approximately ₹43,391/month. At 8.75% for 20 years it becomes approximately ₹44,188/month. Use the calculator above to get the exact EMI for your specific loan amount, rate, and tenure.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span class="faq-q-text">Is it better to reduce EMI or tenure when making a prepayment?</span>
-          <span class="faq-chevron">›</span>
-        </button>
-        <div class="faq-a">
-          Reducing <strong>tenure</strong> saves more total interest because you exit the loan faster. Reducing <strong>EMI</strong> improves your monthly cash flow. If you can comfortably afford the current EMI, reducing tenure is mathematically the better choice. Use the Prepayments section in Advanced Options to simulate both scenarios.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span class="faq-q-text">What happens to my EMI when RBI changes the repo rate?</span>
-          <span class="faq-chevron">›</span>
-        </button>
-        <div class="faq-a">
-          For floating rate home loans, when RBI increases the repo rate, banks typically increase your home loan interest rate — either raising your EMI or extending your tenure. Use the <strong>Interest Rate Changes</strong> feature in Advanced Options to simulate exactly how any rate change affects your total loan cost.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span class="faq-q-text">What is the maximum home loan tenure in India?</span>
-          <span class="faq-chevron">›</span>
-        </button>
-        <div class="faq-a">
-          Most Indian banks offer home loan tenures up to <strong>30 years (360 months)</strong>. SBI, HDFC, ICICI, Kotak and other major lenders typically allow tenures up to 30 years, subject to the borrower's age at loan maturity not exceeding 70–75 years.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span class="faq-q-text">How much home loan can I get on a ₹50,000 salary?</span>
-          <span class="faq-chevron">›</span>
-        </button>
-        <div class="faq-a">
-          Banks typically allow EMI to be 40–50% of your net monthly income. On a ₹50,000 monthly salary, your maximum EMI would be ₹20,000–25,000. At 8.5% for 20 years, this translates to an eligible loan amount of approximately ₹20–24 lakh. The exact amount depends on your credit score, existing liabilities, and the lender.
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ══ SITE FOOTER ══ -->
+    <!-- SITE FOOTER -->
   <footer class="site-footer">
-    <div class="footer-top">
-      <div>
-        <div class="footer-brand-name">Advanced <em>EMI Calculator</em></div>
-        <div class="footer-brand-desc">India's most advanced free home loan EMI calculator — supporting prepayments, rate changes, custom EMI schedules, and full amortisation breakdown.</div>
-      </div>
-      <div>
-        <div class="footer-col-title">Quick Links</div>
-        <div class="footer-links">
-          <a class="footer-link" href="#top">🏠 Calculator</a>
-          <a class="footer-link" href="#faq">❓ FAQs</a>
-          <a class="footer-link" href="#about">ℹ️ About Us</a>
-          <a class="footer-link" href="#contact">✉️ Contact</a>
-        </div>
-      </div>
-      <div>
-        <div class="footer-col-title">Legal</div>
-        <div class="footer-links">
-          <button class="footer-link" onclick="openPrivacy()">🔒 Privacy Policy</button>
-          <a class="footer-link" href="#faq">📋 Disclaimer</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span class="footer-copy">© 2026 Advanced EMI Calculator · All rights reserved</span>
-      <span class="footer-disclaimer">This tool is for informational purposes only and does not constitute financial or legal advice. Always consult a qualified financial advisor before making loan decisions.</span>
+    <div class="sf-inner">
+      <span class="sf-copy">&copy; 2026 <strong>Advanced EMI Calculator</strong> &middot; Made with <span class="sf-heart">&#9829;</span> in India</span>
+      <nav class="sf-nav">
+        <a class="sf-link" href="index.html">Home</a>
+        <a class="sf-link" href="faq.html">FAQs</a>
+        <a class="sf-link" href="about.html">About</a>
+        <a class="sf-link" href="contact.html">Contact</a>
+        <button class="sf-link" onclick="openPrivacy()">Privacy</button>
+        <a class="sf-link" href="disclaimer.html">Disclaimer</a>
+      </nav>
     </div>
   </footer>
 
