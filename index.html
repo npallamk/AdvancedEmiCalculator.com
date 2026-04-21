@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <!-- ── SEO Meta Tags ── -->
 <title>Advanced EMI Calculator – Free Home Loan EMI Calculator India 2026</title>
@@ -174,9 +174,8 @@
   --date-wrap-width: 150px;
 }
 
-body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;padding:76px 16px 60px}
-
-.wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;padding:76px 16px 60px;display:flex;flex-direction:column}
+.wrap{width:100%;min-width:0;max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:14px;flex:1}
 
 /* header import/export buttons */
 .hdr-btn{display:flex;align-items:center;gap:5px;font-size:11px;font-weight:700;font-family:'Nunito',sans-serif;padding:7px 13px;border-radius:100px;border:1.5px solid var(--border);background:#fff;color:var(--ink2);cursor:pointer;transition:all .18s;letter-spacing:.2px}
@@ -196,7 +195,7 @@ body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--ink);min-h
 }
 .hdr-btn-primary{background:var(--green);color:#fff;border-color:var(--green)}
 .hdr-btn-primary:hover{background:#163d24;border-color:#163d24;color:#fff}
-.top{display:flex;align-items:center;justify-content:space-between;padding:0 2px 4px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:0 2px 4px;flex-wrap:wrap;gap:8px}
 .top h1,.site-h1{font-family:'Nunito',sans-serif;font-size:26px;font-weight:800;letter-spacing:-.5px;margin:0}
 .top h1 em,.site-h1 em{font-style:italic;color:var(--green)}
 .site-tagline{font-size:9px;font-weight:700;color:var(--ink3);font-family:'Nunito',sans-serif;letter-spacing:.3px;margin-top:1px;text-transform:uppercase}
@@ -217,7 +216,7 @@ body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--ink);min-h
 .fc-sliders{display:flex;flex-direction:column;gap:0}
 .fc-sl{padding:12px 0;border-bottom:1px solid #F3F4F6}
 .fc-sl:last-child{border-bottom:none}
-.fc-sl-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.fc-sl-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:6px}
 .fc-sl-lbl{font-size:9.5px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:#9CA3AF}
 .fc-sl-val{font-size:15px;font-weight:800;font-family:'Nunito',sans-serif}
 .fc-sl-val.g{color:#1F4D2E}
@@ -325,19 +324,11 @@ input.fc-sel{cursor:text}
 .fc-date-field{display:flex;flex-direction:column;gap:5px;flex:1}
 
 @media(max-width:480px){
-  .fc-date-row{flex-wrap:wrap}
+  .fc-date-row{flex-wrap:wrap;gap:12px}
   .fc-date-row>div{flex:1 1 100% !important;min-width:0 !important}
   .fc-two-col-labels{flex-direction:column;gap:2px}
   .fc-date-row-2col .fc-date-field{flex:1 1 100% !important}
   .fc-radio-group{flex:1 1 100%}
-  /* inline row — stays on one line, no overflow */
-  .fc-inline-row{flex-wrap:nowrap !important;overflow:hidden;width:100%}
-  .fc-inline-row>div{min-width:0 !important}
-  .fc-inline-amt{flex:1 1 auto !important;min-width:0 !important;overflow:hidden}
-  .fc-inline-date{flex:0 0 auto !important;min-width:0 !important}
-  /* shrink date wrap on mobile to prevent overflow */
-  .fc-inline-date .fc-input-wrap.fc-date-wrap{width:calc(var(--date-wrap-width) - 30px) !important}
-  .fc-inline-date .fc-date-btn-row{gap:6px}
   /* adv-body padding tighter on mobile */
   .adv-body.open{padding:12px 16px 16px}
 }
@@ -734,9 +725,6 @@ td.b-cell{color:var(--ink)}
 @media print{.site-footer,.faq-card,.about-card{display:none !important}}
 </style>
 </head>
-<style>
-body { display: flex; flex-direction: column; min-height: 100vh; }
-.wrap { flex: 1; display: flex; flex-direction: column; }
 </style>
 <body id="top">
 
@@ -1452,7 +1440,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
     <!-- SITE FOOTER -->
   <footer class="site-footer">
     <div class="sf-inner">
-      <span class="sf-copy">&copy; 2026 <strong>Advanced EMI Calculator</strong> &middot; Made with <span class="sf-heart">&#9829;</span> in India</span>
+      <span class="sf-copy">&copy; 2026 <strong>Advanced EMI Calculator</strong></span>
       <nav class="sf-nav">
         <a class="sf-link" href="index.html">Home</a>
         <a class="sf-link" href="faq.html">FAQs</a>
