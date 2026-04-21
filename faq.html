@@ -18,8 +18,7 @@
   <!-- ── Open Graph ── -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="FAQs – Advanced EMI Calculator">
-  <meta property="og:description"
-    content="Answers to the most common home loan EMI questions for Indian borrowers.">
+  <meta property="og:description" content="Answers to the most common home loan EMI questions for Indian borrowers.">
   <meta property="og:url" content="https://advancedemicalculator.com/faq.html">
   <meta property="og:site_name" content="Advanced EMI Calculator">
   <meta property="og:locale" content="en_IN">
@@ -27,8 +26,7 @@
   <!-- ── Twitter Card ── -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="FAQs – Advanced EMI Calculator">
-  <meta name="twitter:description"
-    content="Common home loan EMI questions answered. India-focused EMI calculator FAQ.">
+  <meta name="twitter:description" content="Common home loan EMI questions answered. India-focused EMI calculator FAQ.">
   <meta name="twitter:site" content="@advancedemicalc">
 
   <!-- ── JSON-LD Structured Data ── -->
@@ -145,8 +143,15 @@
     }
 
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(10px) }
-      to { opacity: 1; transform: translateY(0) }
+      from {
+        opacity: 0;
+        transform: translateY(10px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
     }
 
     /* ── PRIVACY POLICY MODAL ── */
@@ -161,7 +166,9 @@
       padding: 20px
     }
 
-    .pp-overlay.open { display: flex }
+    .pp-overlay.open {
+      display: flex
+    }
 
     .pp-modal {
       background: #fff;
@@ -202,7 +209,10 @@
       transition: background .15s
     }
 
-    .pp-close:hover { background: #F3F4F6; color: var(--ink) }
+    .pp-close:hover {
+      background: #F3F4F6;
+      color: var(--ink)
+    }
 
     .pp-body {
       overflow-y: auto;
@@ -214,12 +224,36 @@
       line-height: 1.75
     }
 
-    .pp-body h3 { font-size: 13px; font-weight: 800; color: var(--ink); margin: 18px 0 6px }
-    .pp-body h3:first-child { margin-top: 0 }
-    .pp-body p { margin-bottom: 10px }
-    .pp-body ul { margin: 0 0 10px 18px }
-    .pp-body ul li { margin-bottom: 4px }
-    .pp-updated { font-size: 10px; color: var(--ink3); margin-top: 16px; font-style: italic; display: block }
+    .pp-body h3 {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--ink);
+      margin: 18px 0 6px
+    }
+
+    .pp-body h3:first-child {
+      margin-top: 0
+    }
+
+    .pp-body p {
+      margin-bottom: 10px
+    }
+
+    .pp-body ul {
+      margin: 0 0 10px 18px
+    }
+
+    .pp-body ul li {
+      margin-bottom: 4px
+    }
+
+    .pp-updated {
+      font-size: 10px;
+      color: var(--ink3);
+      margin-top: 16px;
+      font-style: italic;
+      display: block
+    }
 
     /* ── App Bar ── */
     .app-bar {
@@ -253,9 +287,16 @@
       flex-shrink: 0
     }
 
-    .app-bar-brand em { font-style: italic; color: var(--green) }
+    .app-bar-brand em {
+      font-style: italic;
+      color: var(--green)
+    }
 
-    .app-bar-links { display: flex; align-items: center; gap: 2px }
+    .app-bar-links {
+      display: flex;
+      align-items: center;
+      gap: 2px
+    }
 
     .app-bar-link {
       font-size: 12px;
@@ -269,8 +310,15 @@
       letter-spacing: .1px
     }
 
-    .app-bar-link:hover { background: var(--green-l); color: var(--green) }
-    .app-bar-link.active { background: var(--green-l); color: var(--green) }
+    .app-bar-link:hover {
+      background: var(--green-l);
+      color: var(--green)
+    }
+
+    .app-bar-link.active {
+      background: var(--green-l);
+      color: var(--green)
+    }
 
     .app-bar-ham {
       display: none;
@@ -284,7 +332,9 @@
       transition: background .15s
     }
 
-    .app-bar-ham:hover { background: #F3F4F6 }
+    .app-bar-ham:hover {
+      background: #F3F4F6
+    }
 
     .app-bar-ham span {
       display: block;
@@ -295,9 +345,17 @@
       transition: all .2s
     }
 
-    .app-bar-ham.open span:nth-child(1) { transform: translateY(6px) rotate(45deg) }
-    .app-bar-ham.open span:nth-child(2) { opacity: 0 }
-    .app-bar-ham.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg) }
+    .app-bar-ham.open span:nth-child(1) {
+      transform: translateY(6px) rotate(45deg)
+    }
+
+    .app-bar-ham.open span:nth-child(2) {
+      opacity: 0
+    }
+
+    .app-bar-ham.open span:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg)
+    }
 
     .app-bar-mobile {
       display: none;
@@ -306,7 +364,9 @@
       padding: 8px 16px 12px
     }
 
-    .app-bar-mobile.open { display: flex }
+    .app-bar-mobile.open {
+      display: flex
+    }
 
     .app-bar-mobile-link {
       font-size: 13px;
@@ -320,11 +380,19 @@
     }
 
     .app-bar-mobile-link:hover,
-    .app-bar-mobile-link.active { background: var(--green-l); color: var(--green) }
+    .app-bar-mobile-link.active {
+      background: var(--green-l);
+      color: var(--green)
+    }
 
     @media(max-width:600px) {
-      .app-bar-links { display: none }
-      .app-bar-ham { display: flex }
+      .app-bar-links {
+        display: none
+      }
+
+      .app-bar-ham {
+        display: flex
+      }
     }
 
     /* ── FAQ SECTION ── */
@@ -336,7 +404,9 @@
       animation: fadeUp .4s .14s ease both
     }
 
-    .faq-inner { padding: 24px 20px }
+    .faq-inner {
+      padding: 24px 20px
+    }
 
     .faq-title {
       font-size: 18px;
@@ -347,7 +417,12 @@
       margin-bottom: 6px
     }
 
-    .faq-sub { font-size: 12px; color: var(--ink3); font-weight: 600; margin-bottom: 16px }
+    .faq-sub {
+      font-size: 12px;
+      color: var(--ink3);
+      font-weight: 600;
+      margin-bottom: 16px
+    }
 
     .faq-item {
       border: 1px solid var(--border);
@@ -356,7 +431,9 @@
       margin-bottom: 10px
     }
 
-    .faq-item:last-child { margin-bottom: 0 }
+    .faq-item:last-child {
+      margin-bottom: 0
+    }
 
     .faq-q {
       width: 100%;
@@ -376,8 +453,13 @@
       transition: background .15s
     }
 
-    .faq-q:hover { background: #F9F7F4 }
-    .faq-q-text { flex: 1 }
+    .faq-q:hover {
+      background: #F9F7F4
+    }
+
+    .faq-q-text {
+      flex: 1
+    }
 
     .faq-chevron {
       font-size: 16px;
@@ -387,7 +469,9 @@
       display: inline-block
     }
 
-    .faq-chevron.open { transform: rotate(90deg) }
+    .faq-chevron.open {
+      transform: rotate(90deg)
+    }
 
     .faq-a {
       max-height: 0;
@@ -402,7 +486,10 @@
       background: #F9F8F6
     }
 
-    .faq-a.open { max-height: 300px; padding: 14px 16px }
+    .faq-a.open {
+      max-height: 300px;
+      padding: 14px 16px
+    }
 
     /* ── SITE FOOTER slim strip ── */
     .site-footer {
@@ -432,7 +519,9 @@
       font-weight: 700
     }
 
-    .sf-heart { color: #E05C72 }
+    .sf-heart {
+      color: #E05C72
+    }
 
     .sf-nav {
       display: flex;
@@ -458,7 +547,7 @@
 
     .sf-link:hover {
       color: #fff;
-      background: rgba(255,255,255,.07)
+      background: rgba(255, 255, 255, .07)
     }
 
     @media(max-width:600px) {
@@ -469,6 +558,10 @@
         padding: 14px 16px
       }
     }
+
+    /* ── AD CARD ── */
+    .ad-card{background:#fff;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,.06),0 1px 3px rgba(0,0,0,.04);overflow:hidden}
+    .ad-label{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#C4B5A0;font-family:'Nunito',sans-serif;padding:8px 14px 0;text-align:right}
   </style>
 </head>
 
@@ -497,8 +590,10 @@
           of personalised advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank"
             rel="noopener">Google Ad Settings</a>.</p>
         <ul>
-          <li>Google's use of advertising cookies enables it and its partners to serve ads based on your visit to our site.</li>
-          <li>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to our website.</li>
+          <li>Google's use of advertising cookies enables it and its partners to serve ads based on your visit to our
+            site.</li>
+          <li>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to our
+            website.</li>
         </ul>
 
         <h3>4. Third-Party Analytics</h3>
@@ -523,7 +618,8 @@
 
         <h3>9. Contact Us</h3>
         <p>If you have any questions about this Privacy Policy, please contact us at
-          <strong>contact@advancedemicalculator.com</strong>.</p>
+          <strong>contact@advancedemicalculator.com</strong>.
+        </p>
 
         <span class="pp-updated">Last updated: April 2026</span>
       </div>
@@ -663,20 +759,34 @@
       </div>
     </section>
 
-      <!-- SITE FOOTER -->
-  <footer class="site-footer">
-    <div class="sf-inner">
-      <span class="sf-copy">&copy; 2026 <strong>Advanced EMI Calculator</strong> &middot; Made with <span class="sf-heart">&#9829;</span> in India</span>
-      <nav class="sf-nav">
-        <a class="sf-link" href="index.html">Home</a>
-        <a class="sf-link" href="faq.html">FAQs</a>
-        <a class="sf-link" href="about.html">About</a>
-        <a class="sf-link" href="contact.html">Contact</a>
-        <button class="sf-link" onclick="openPrivacy()">Privacy</button>
-        <a class="sf-link" href="disclaimer.html">Disclaimer</a>
-      </nav>
+  <!-- ══ AD CARD — above footer ══ -->
+  <div class="ad-card" style="margin-bottom: 14px;">
+    <div class="ad-label">Advertisement</div>
+    <div style="padding:4px 10px 10px">
+      <ins class="adsbygoogle"
+           style="display:block;min-height:90px"
+           data-ad-client="ca-pub-3261920810785932"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-  </footer>
+  </div>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <div class="sf-inner">
+        <span class="sf-copy">&copy; 2026 <strong>Advanced EMI Calculator</strong></span>
+        <nav class="sf-nav">
+          <a class="sf-link" href="index.html">Home</a>
+          <a class="sf-link" href="faq.html">FAQs</a>
+          <a class="sf-link" href="about.html">About</a>
+          <a class="sf-link" href="contact.html">Contact</a>
+          <button class="sf-link" onclick="openPrivacy()">Privacy</button>
+          <a class="sf-link" href="disclaimer.html">Disclaimer</a>
+        </nav>
+      </div>
+    </footer>
 
   </div>
 
