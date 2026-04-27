@@ -23,6 +23,9 @@
   <meta property="og:url" content="https://advancedemicalculator.com/about.html">
   <meta property="og:site_name" content="Advanced EMI Calculator">
   <meta property="og:locale" content="en_IN">
+  <meta property="og:image" content="https://advancedemicalculator.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- ── Twitter Card ── -->
   <meta name="twitter:card" content="summary_large_image">
@@ -53,9 +56,15 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3261920810785932"
     crossorigin="anonymous"></script>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
-    rel="stylesheet">
+  <!-- ── Performance: Preconnect ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
     *,
     *::before,
@@ -572,7 +581,7 @@
 
         <h3>9. Contact Us</h3>
         <p>If you have any questions about this Privacy Policy, please contact us at
-          <strong>contact@advancedemicalculator.com</strong>.</p>
+          <strong>nithin.kumar.contact@zohomail.in</strong>.</p>
 
         <span class="pp-updated">Last updated: April 2026</span>
       </div>
@@ -586,6 +595,7 @@
       <!-- Desktop nav links -->
       <div class="app-bar-links">
         <a class="app-bar-link" href="index.html">Home</a>
+        <a class="app-bar-link" href="blog.html">Blog</a>
         <a class="app-bar-link" href="faq.html">FAQs</a>
         <a class="app-bar-link active" href="about.html">About</a>
         <a class="app-bar-link" href="contact.html">Contact</a>
@@ -599,6 +609,7 @@
     <!-- Mobile dropdown -->
     <div class="app-bar-mobile" id="appBarMobile">
       <a class="app-bar-mobile-link" href="index.html" onclick="closeAppMenu()">Home</a>
+      <a class="app-bar-mobile-link" href="blog.html" onclick="closeAppMenu()">Blog</a>
       <a class="app-bar-mobile-link" href="faq.html" onclick="closeAppMenu()">FAQs</a>
       <a class="app-bar-mobile-link active" href="about.html" onclick="closeAppMenu()">About</a>
       <a class="app-bar-mobile-link" href="contact.html" onclick="closeAppMenu()">Contact</a>
@@ -614,9 +625,19 @@
         <h1 class="about-title">About Advanced EMI Calculator</h1>
         <div class="about-sub">A simple, powerful EMI calculator for smarter loan planning.</div>
         <div class="about-body">
-          <p>Plan loans, test prepayments, and simulate rate changes — all in real time.</p>
-          <p>No sign-ups. No data tracking. Everything runs securely in your browser.</p>
-          <p>Accurate amortisation with support for flexible EMI scenarios.</p>
+          <p><strong>Advanced EMI Calculator</strong> is a free, powerful home loan planning tool built specifically for Indian borrowers. Whether you're a first-time home buyer exploring your options or an existing borrower looking to optimise your repayment strategy, this calculator helps you make informed decisions — backed by accurate, real-time numbers.</p>
+
+          <p>Unlike basic EMI calculators offered by banks, our tool goes far beyond a simple principal-rate-tenure calculation. You can simulate <strong>lump-sum and recurring prepayments</strong> to see exactly how much interest you'll save. You can model <strong>floating rate changes</strong> — what happens when RBI cuts or hikes the repo rate? And you can set <strong>custom EMI amounts</strong> to test different repayment scenarios, all visualised in a detailed day-accurate amortisation schedule.</p>
+
+          <p>Every calculation runs <strong>100% in your browser</strong>. We never collect, store, or transmit any of your financial data. There are no sign-ups, no accounts, and no tracking. Your loan details remain entirely private on your device.</p>
+
+          <h3 style="font-size:14px;font-weight:800;color:var(--ink);margin:16px 0 8px">How to Use</h3>
+          <p>Simply enter your <strong>loan amount</strong>, <strong>interest rate</strong>, and <strong>tenure</strong> using the sliders or input fields on the home page. The calculator instantly shows your EMI, total interest, and a complete repayment breakdown. Open <em>Advanced Options</em> to add prepayments, rate changes, or custom EMI schedules — and watch how each change impacts your total cost in real time.</p>
+
+          <h3 style="font-size:14px;font-weight:800;color:var(--ink);margin:16px 0 8px">Who Is This For?</h3>
+          <p>This tool is designed for anyone in India planning a home loan — whether you're comparing rates across SBI, HDFC, ICICI, Kotak, or other banks, evaluating how much you can afford on your salary, or deciding between reducing EMI vs. reducing tenure after a prepayment. It's also useful for existing borrowers who want to understand the impact of RBI rate changes on their monthly outflow.</p>
+
+          <p>Built with care by a team passionate about making financial planning accessible, transparent, and completely free.</p>
         </div>
         <div class="about-features">
           <div class="about-feat">
@@ -678,10 +699,11 @@
       <span class="sf-copy">&copy; 2026 <strong>Advanced EMI Calculator</strong></span>
       <nav class="sf-nav">
         <a class="sf-link" href="index.html">Home</a>
+        <a class="sf-link" href="blog.html">Blog</a>
         <a class="sf-link" href="faq.html">FAQs</a>
         <a class="sf-link" href="about.html">About</a>
         <a class="sf-link" href="contact.html">Contact</a>
-        <button class="sf-link" onclick="openPrivacy()">Privacy</button>
+        <a class="sf-link" href="privacy.html">Privacy</a>
         <a class="sf-link" href="disclaimer.html">Disclaimer</a>
       </nav>
     </div>

@@ -23,6 +23,9 @@
   <meta property="og:url" content="https://advancedemicalculator.com/contact.html">
   <meta property="og:site_name" content="Advanced EMI Calculator">
   <meta property="og:locale" content="en_IN">
+  <meta property="og:image" content="https://advancedemicalculator.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- ── Twitter Card ── -->
   <meta name="twitter:card" content="summary_large_image">
@@ -53,9 +56,15 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3261920810785932"
     crossorigin="anonymous"></script>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
-    rel="stylesheet">
+  <!-- ── Performance: Preconnect ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
     *,
     *::before,
@@ -461,7 +470,6 @@
         gap: 10px;
         padding: 14px 16px
       }
-      }
     }
 
     /* ── AD CARD ── */
@@ -521,7 +529,7 @@
 
         <h3>9. Contact Us</h3>
         <p>If you have any questions about this Privacy Policy, please contact us at
-          <strong>contact@advancedemicalculator.com</strong>.</p>
+          <strong>nithin.kumar.contact@zohomail.in</strong>.</p>
 
         <span class="pp-updated">Last updated: April 2026</span>
       </div>
@@ -534,6 +542,7 @@
       <a class="app-bar-brand" href="index.html">Advanced <em>EMI Calculator</em></a>
       <div class="app-bar-links">
         <a class="app-bar-link" href="index.html">Home</a>
+        <a class="app-bar-link" href="blog.html">Blog</a>
         <a class="app-bar-link" href="faq.html">FAQs</a>
         <a class="app-bar-link" href="about.html">About</a>
         <a class="app-bar-link active" href="contact.html">Contact</a>
@@ -545,6 +554,7 @@
     </div>
     <div class="app-bar-mobile" id="appBarMobile">
       <a class="app-bar-mobile-link" href="index.html" onclick="closeAppMenu()">Home</a>
+      <a class="app-bar-mobile-link" href="blog.html" onclick="closeAppMenu()">Blog</a>
       <a class="app-bar-mobile-link" href="faq.html" onclick="closeAppMenu()">FAQs</a>
       <a class="app-bar-mobile-link" href="about.html" onclick="closeAppMenu()">About</a>
       <a class="app-bar-mobile-link active" href="contact.html" onclick="closeAppMenu()">Contact</a>
@@ -561,8 +571,13 @@
         <div class="contact-sub">We'd love to hear from you — feedback, bugs, or suggestions</div>
       </div>
 
+      <div style="font-size:13px;font-weight:600;color:var(--ink2);font-family:'Nunito',sans-serif;line-height:1.75;margin-bottom:16px">
+        <p style="margin-bottom:10px">Whether you've found a bug, have a feature request, or just want to share how the calculator helped you plan your home loan — we'd genuinely love to hear from you. Your feedback helps us improve the tool for thousands of Indian borrowers.</p>
+        <p style="margin-bottom:10px">We welcome queries about <strong>EMI calculations</strong>, <strong>prepayment strategies</strong>, <strong>amortisation schedules</strong>, or any technical issues you encounter while using the calculator. For questions about specific bank policies or loan eligibility, we recommend contacting your bank directly.</p>
+      </div>
+
       <div class="contact-note">
-        💡 For fastest support, email us directly. We typically respond within 1–2 business days.
+        💡 For fastest support, email us directly. We typically respond within <strong>1–2 business days</strong> (Mon–Fri, IST timezone).
       </div>
 
       <div class="contact-grid">
@@ -587,6 +602,22 @@
             <div class="contact-val">Browse common questions</div>
           </div>
         </a>
+        <a class="contact-item" href="about.html">
+          <div class="contact-icon">ℹ️</div>
+          <div class="contact-info">
+            <div class="contact-lbl">About</div>
+            <div class="contact-val">Learn more about us</div>
+          </div>
+        </a>
+      </div>
+
+      <div style="border-top:1px solid #F3F4F6;padding:16px 0 0;margin-bottom:16px">
+        <div style="font-size:12px;font-weight:800;color:var(--ink);font-family:'Nunito',sans-serif;margin-bottom:10px">Common Support Questions</div>
+        <div style="font-size:12px;font-weight:600;color:var(--ink2);font-family:'Nunito',sans-serif;line-height:1.7">
+          <p style="margin-bottom:8px"><strong>Is the calculator accurate?</strong> — Yes, our calculations use the standard EMI formula (reducing balance method) and produce day-accurate amortisation schedules. Minor differences from bank statements may occur due to rounding conventions.</p>
+          <p style="margin-bottom:8px"><strong>Can I save my calculations?</strong> — Yes! Use the Export button to save your loan configuration as a JSON file, or the Share button to generate a shareable link. You can also save the amortisation schedule as a PDF.</p>
+          <p style="margin-bottom:8px"><strong>Do you store my data?</strong> — No. All calculations run entirely in your browser. We never collect, store, or transmit your financial data. Read our <a href="privacy.html" style="color:var(--green)">Privacy Policy</a> for details.</p>
+        </div>
       </div>
 
       <div class="contact-footer">
@@ -614,10 +645,11 @@
       <span class="sf-copy">&copy; 2026 <strong>Advanced EMI Calculator</strong></span>
       <nav class="sf-nav">
         <a class="sf-link" href="index.html">Home</a>
+        <a class="sf-link" href="blog.html">Blog</a>
         <a class="sf-link" href="faq.html">FAQs</a>
         <a class="sf-link" href="about.html">About</a>
         <a class="sf-link" href="contact.html">Contact</a>
-        <button class="sf-link" onclick="openPrivacy()">Privacy</button>
+        <a class="sf-link" href="privacy.html">Privacy</a>
         <a class="sf-link" href="disclaimer.html">Disclaimer</a>
       </nav>
     </div>

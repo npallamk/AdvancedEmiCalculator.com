@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- ── SEO Meta Tags ── -->
 <title>Advanced EMI Calculator – Free Home Loan EMI Calculator India 2026</title>
@@ -19,6 +19,9 @@
 <meta property="og:url" content="https://advancedemicalculator.com/">
 <meta property="og:site_name" content="Advanced EMI Calculator">
 <meta property="og:locale" content="en_IN">
+<meta property="og:image" content="https://advancedemicalculator.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 
 <!-- ── Twitter Card ── -->
 <meta name="twitter:card" content="summary_large_image">
@@ -140,7 +143,15 @@
 <meta name="google-adsense-account" content="ca-pub-3261920810785932">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3261920810785932" crossorigin="anonymous"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+<!-- ── Performance: Preconnect ── -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -176,6 +187,8 @@
 
 body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;padding:76px 16px 60px;display:flex;flex-direction:column}
 .wrap{width:100%;min-width:0;max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:14px;flex:1}
+.site-h1{font-size:16px;font-weight:800;color:var(--ink);letter-spacing:-.3px;font-family:'Nunito',sans-serif}
+.site-h1 em{font-style:italic;color:var(--green)}
 
 /* header import/export buttons */
 .hdr-btn{display:flex;align-items:center;gap:5px;font-size:11px;font-weight:700;font-family:'Nunito',sans-serif;padding:7px 13px;border-radius:100px;border:1.5px solid var(--border);background:#fff;color:var(--ink2);cursor:pointer;transition:all .18s;letter-spacing:.2px}
@@ -199,8 +212,6 @@ body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--ink);min-h
 .top h1,.site-h1{font-family:'Nunito',sans-serif;font-size:26px;font-weight:800;letter-spacing:-.5px;margin:0}
 .top h1 em,.site-h1 em{font-style:italic;color:var(--green)}
 .site-tagline{font-size:9px;font-weight:700;color:var(--ink3);font-family:'Nunito',sans-serif;letter-spacing:.3px;margin-top:1px;text-transform:uppercase}
-.curr-select-wrap{display:flex;align-items:center}
-.curr-select{font-size:11px;font-weight:700;letter-spacing:.5px;color:var(--green);background:var(--green-l);padding:5px 10px;border-radius:100px;border:none;outline:none;cursor:pointer;font-family:'Nunito',sans-serif;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%231F4D2E' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center;padding-right:22px;background-color:#E6F2EC}
 
 /* ── CARD BASE ── */
 .card{background:var(--card);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}
@@ -614,7 +625,7 @@ td.b-cell{color:var(--ink)}
   .wrap{max-width:100% !important;gap:10px;padding:0 8px}
 
   /* Hide ALL interactive / nav elements */
-  .hdr-actions-desktop,.hdr-overflow,.curr-select-wrap,
+  .hdr-actions-desktop,.hdr-overflow,
   input[type=range],.fc-sl-val-wrap,.fc-toggle,.fc-toggle-wrap,
   .fc-add-btn,.fc-hist-del,.scroll-today-btn,
   .amort-toggle,.tab-group,.date-sel,
@@ -725,7 +736,6 @@ td.b-cell{color:var(--ink)}
 @media print{.site-footer,.faq-card,.about-card{display:none !important}}
 </style>
 </head>
-</style>
 <body id="top">
 
 <!-- ══ PRIVACY POLICY MODAL ══ -->
@@ -765,7 +775,7 @@ td.b-cell{color:var(--ink)}
       <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date.</p>
 
       <h3>9. Contact Us</h3>
-      <p>If you have any questions about this Privacy Policy, please contact us at <strong>contact@advancedemicalculator.com</strong>.</p>
+      <p>If you have any questions about this Privacy Policy, please contact us at <strong>nithin.kumar.contact@zohomail.in</strong>.</p>
 
       <span class="pp-updated">Last updated: April 2026</span>
     </div>
@@ -779,6 +789,7 @@ td.b-cell{color:var(--ink)}
     <!-- Desktop nav links -->
     <div class="app-bar-links">
       <a class="app-bar-link active" href="index.html">Home</a>
+      <a class="app-bar-link" href="blog.html">Blog</a>
       <a class="app-bar-link" href="faq.html">FAQs</a>
       <a class="app-bar-link" href="about.html">About</a>
       <a class="app-bar-link" href="contact.html">Contact</a>
@@ -792,6 +803,7 @@ td.b-cell{color:var(--ink)}
   <!-- Mobile dropdown -->
   <div class="app-bar-mobile" id="appBarMobile">
     <a class="app-bar-mobile-link active" href="index.html" onclick="closeAppMenu()">Home</a>
+    <a class="app-bar-mobile-link" href="blog.html" onclick="closeAppMenu()">Blog</a>
     <a class="app-bar-mobile-link" href="faq.html" onclick="closeAppMenu()">FAQs</a>
     <a class="app-bar-mobile-link" href="about.html" onclick="closeAppMenu()">About</a>
     <a class="app-bar-mobile-link" href="contact.html" onclick="closeAppMenu()">Contact</a>
@@ -803,33 +815,8 @@ td.b-cell{color:var(--ink)}
 
   <!-- Header -->
   <div class="top">
-    <h1 style="display:none;">Advanced EMI Calculator</h1>
+    <h1 class="site-h1">Advanced <em>EMI Calculator</em></h1>
     <div style="display:flex;align-items:center;gap:8px;margin-left:auto;">
-      <div class="curr-select-wrap">
-        <select id="currencySelect" class="curr-select" onchange="onCurrencyChange()">
-          <option value="INR">₹ INR</option>
-          <option value="USD">$ USD</option>
-          <option value="EUR">€ EUR</option>
-          <option value="GBP">£ GBP</option>
-          <option value="JPY">¥ JPY</option>
-          <option value="CNY">¥ CNY</option>
-          <option value="AED">د.إ AED</option>
-          <option value="SGD">S$ SGD</option>
-          <option value="AUD">A$ AUD</option>
-          <option value="CAD">C$ CAD</option>
-          <option value="CHF">Fr CHF</option>
-          <option value="MYR">RM MYR</option>
-          <option value="SAR">﷼ SAR</option>
-          <option value="HKD">HK$ HKD</option>
-          <option value="KRW">₩ KRW</option>
-          <option value="BRL">R$ BRL</option>
-          <option value="ZAR">R ZAR</option>
-          <option value="MXN">$ MXN</option>
-          <option value="NZD">NZ$ NZD</option>
-          <option value="THB">฿ THB</option>
-        </select>
-      </div>
-
       <div class="hdr-actions-desktop">
         <button class="hdr-btn" onclick="importConfig()" title="Import loan config">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
@@ -1443,10 +1430,11 @@ td.b-cell{color:var(--ink)}
       <span class="sf-copy">&copy; 2026 <strong>Advanced EMI Calculator</strong></span>
       <nav class="sf-nav">
         <a class="sf-link" href="index.html">Home</a>
+        <a class="sf-link" href="blog.html">Blog</a>
         <a class="sf-link" href="faq.html">FAQs</a>
         <a class="sf-link" href="about.html">About</a>
         <a class="sf-link" href="contact.html">Contact</a>
-        <button class="sf-link" onclick="openPrivacy()">Privacy</button>
+        <a class="sf-link" href="privacy.html">Privacy</a>
         <a class="sf-link" href="disclaimer.html">Disclaimer</a>
       </nav>
     </div>
@@ -1531,49 +1519,7 @@ let amortInitialized = false;
 
 // ── Formatters ──
 // ── Currency config ──
-const CURRENCIES = {
-  INR: { symbol:'₹', locale:'en-IN', scale:[{v:10000000,s:'Cr'},{v:100000,s:'L'},{v:1000,s:'K'}] },
-  USD: { symbol:'$', locale:'en-US', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  EUR: { symbol:'€', locale:'de-DE', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  GBP: { symbol:'£', locale:'en-GB', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  JPY: { symbol:'¥', locale:'ja-JP', scale:[{v:100000000,s:'億'},{v:10000,s:'万'}] },
-  CNY: { symbol:'¥', locale:'zh-CN', scale:[{v:100000000,s:'亿'},{v:10000,s:'万'}] },
-  AED: { symbol:'د.إ', locale:'ar-AE', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  SGD: { symbol:'S$', locale:'en-SG', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  AUD: { symbol:'A$', locale:'en-AU', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  CAD: { symbol:'C$', locale:'en-CA', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  CHF: { symbol:'Fr', locale:'de-CH', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  MYR: { symbol:'RM', locale:'ms-MY', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  SAR: { symbol:'﷼', locale:'ar-SA', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  HKD: { symbol:'HK$', locale:'zh-HK', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  KRW: { symbol:'₩', locale:'ko-KR', scale:[{v:100000000,s:'억'},{v:10000,s:'만'}] },
-  BRL: { symbol:'R$', locale:'pt-BR', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  ZAR: { symbol:'R', locale:'en-ZA', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  MXN: { symbol:'$', locale:'es-MX', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  NZD: { symbol:'NZ$', locale:'en-NZ', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-  THB: { symbol:'฿', locale:'th-TH', scale:[{v:1000000000,s:'B'},{v:1000000,s:'M'},{v:1000,s:'K'}] },
-};
-let activeCurrency = CURRENCIES['INR'];
-
-function onCurrencyChange() {
-  const code = document.getElementById('currencySelect').value;
-  activeCurrency = CURRENCIES[code] || CURRENCIES['INR'];
-  const sym = activeCurrency.symbol;
-  // Update all currency prefix displays
-  const els = {
-    loanPrefix: sym,
-    newEmiPrefix: sym,
-    ppAmtPrefix: sym,
-    ppRecAmtPrefix: sym,
-    ppStepAmtPrefix: sym,
-    newEmiLbl: `New EMI (${sym})`,
-  };
-  Object.entries(els).forEach(([id, val]) => {
-    const el = document.getElementById(id);
-    if (el) el.textContent = val;
-  });
-  calc();
-}
+let activeCurrency = { symbol:'₹', locale:'en-IN', scale:[{v:10000000,s:'Cr'},{v:100000,s:'L'},{v:1000,s:'K'}] };
 
 const fL = v => {
   const s = activeCurrency.symbol;
